@@ -1,4 +1,4 @@
-package com.nazmul.rectrofit;
+package com.nazmul.retrofit;
 
 public class Constant {
 

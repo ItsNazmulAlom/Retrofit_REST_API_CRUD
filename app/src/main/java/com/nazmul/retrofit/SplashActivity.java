@@ -1,4 +1,4 @@
-package com.nazmul.rectrofit;
+package com.nazmul.retrofit;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.os.Handler;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.nazmul.rectrofit.R;
 
 public class SplashActivity extends AppCompatActivity {
     int splashTimeOut = 1500;

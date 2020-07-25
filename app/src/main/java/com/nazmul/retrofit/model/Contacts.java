@@ -1,4 +1,4 @@
-package com.nazmul.rectrofit.model;
+package com.nazmul.retrofit.model;
 
 import com.google.gson.annotations.SerializedName;
 

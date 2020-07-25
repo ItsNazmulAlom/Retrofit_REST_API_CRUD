@@ -1,7 +1,7 @@
-package com.nazmul.rectrofit.remote;
+package com.nazmul.retrofit.remote;
 
-import com.nazmul.rectrofit.Constant;
-import com.nazmul.rectrofit.model.Contacts;
+import com.nazmul.retrofit.Constant;
+import com.nazmul.retrofit.model.Contacts;
 
 import java.util.List;
 
@@ -21,7 +21,6 @@ public interface ApiInterface {
     public Call<Contacts> insertUser(
             @Field("name") String name,
             @Field("email") String email);
-
 
     //for signup
     @FormUrlEncoded

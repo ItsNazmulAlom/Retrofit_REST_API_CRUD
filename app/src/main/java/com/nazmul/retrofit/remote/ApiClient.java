@@ -1,6 +1,6 @@
-package com.nazmul.rectrofit.remote;
+package com.nazmul.retrofit.remote;
 
-import com.nazmul.rectrofit.Constant;
+import com.nazmul.retrofit.Constant;
 
 //import retrofit2.Retrofit;
 //import retrofit2.converter.gson.GsonConverterFactory;

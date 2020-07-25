@@ -1,4 +1,4 @@
-package com.nazmul.rectrofit;
+package com.nazmul.retrofit;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -11,9 +11,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.nazmul.rectrofit.model.Contacts;
-import com.nazmul.rectrofit.remote.ApiClient;
-import com.nazmul.rectrofit.remote.ApiInterface;
+import com.nazmul.rectrofit.R;
+import com.nazmul.retrofit.model.Contacts;
+import com.nazmul.retrofit.remote.ApiClient;
+import com.nazmul.retrofit.remote.ApiInterface;
 
 import es.dmoral.toasty.Toasty;
 import retrofit2.Call;
@@ -82,12 +83,12 @@ public class SignupActivity extends AppCompatActivity {
             public void onResponse(Call<Contacts> call, Response<Contacts> response) {
                 String value = response.body().getValue();
                 String message = response.body().getMassage();
+
                 Log.d("value",value);
                 Log.d("message",message);
+
                 if (value.equals("success")){
                     loading.dismiss();
-//                    Toast.makeText(SignupActivity.this,message,Toast.LENGTH_LONG).show();
-//                    Toasty.success(SignupActivity.this,"Success!",Toast.LENGTH_SHORT, true).show();
                     Toasty.success(SignupActivity.this, "Sign up successful", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
                     startActivity(intent);
@@ -102,14 +103,13 @@ public class SignupActivity extends AppCompatActivity {
                 else {
                     loading.dismiss();
                     Toast.makeText(SignupActivity.this, message, Toast.LENGTH_SHORT).show();
-//                    Toasty.info(SignupActivity.this,"").show();
+
                 }
             }
 
             @Override
             public void onFailure(Call<Contacts> call, Throwable t) {
                 loading.dismiss();
-//                Toasty.error(yourContext, "This is an error toast.", Toast.LENGTH_SHORT, true).show();
                 Toasty.error(SignupActivity.this,"Something is wrong",Toast.LENGTH_SHORT,true).show();
 
 
