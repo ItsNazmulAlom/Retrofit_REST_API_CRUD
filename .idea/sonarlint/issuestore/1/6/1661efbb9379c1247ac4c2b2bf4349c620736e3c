@@ -1,7 +1,7 @@
 
-E
-java:S1659"#Declare "login" on a separate line.(„Ñ…üùÿÿÿÿ8ñ§€Ÿ´.
-H
-java:S1481S",Remove this unused "message" local variable.(’¸çB8Ãâ£šµ.
 L
 java:S1659"*Declare "etxtPassword" on a separate line.(¾æŠ™şÿÿÿÿ8Àùë™µ.
+H
+java:S1481S",Remove this unused "message" local variable.(’¸çB8Ãâ£šµ.
+E
+java:S1659"#Declare "login" on a separate line.(„Ñ…üùÿÿÿÿ8ñ§€Ÿ´.

@@ -23,3 +23,11 @@ k
 ;app/src/main/java/com/nazmul/retrofit/remote/ApiClient.java,d/e/decf91b57ac48cd2f8136b828083203a2a610bbe
 i
 9app/src/main/java/com/nazmul/retrofit/SignupActivity.java,5/b/5ba6675caa23db7cd8ab9bbae16cc0ff1ae78b2f
+i
+9app/src/main/java/com/nazmul/retrofit/SplashActivity.java,0/c/0cf198e7cc32e3fa557af2276476d85a35bba07c
+W
+'app/src/main/res/drawable/ic_logout.xml,3/7/37db27c220e57516140aa331048644f295f9d2db
+W
+'app/src/main/res/drawable/ic_search.xml,f/1/f147bc5a18c943e2202ab4271561325af3e75237
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0

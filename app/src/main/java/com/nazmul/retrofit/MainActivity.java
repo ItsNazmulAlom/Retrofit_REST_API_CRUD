@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity{
  private List<Contacts> contactsList;
  private ApiInterface apiInterface;
 
-
 //initialize
     RecyclerView recyclerView;
     ProgressBar progressBar;
@@ -64,6 +63,7 @@ public class MainActivity extends AppCompatActivity{
             public void onResponse(Call<List<Contacts>> call, Response<List<Contacts>> response) {
                 progressBar.setVisibility(View.INVISIBLE);
                 contactsList = response.body();
+//                adapter = new Adapter(MainActivity.this,contactsList);
                 adapter = new Adapter(MainActivity.this,contactsList);
                 recyclerView.setAdapter(adapter);
                 adapter.notifyDataSetChanged();
@@ -100,9 +100,9 @@ public class MainActivity extends AppCompatActivity{
             fetchData("users",query);
                 return false;
             }
-
             @Override
             public boolean onQueryTextChange(String newText) {
+                Log.d("submit",newText);
             fetchData("users",newText);
                 return false;
             }
