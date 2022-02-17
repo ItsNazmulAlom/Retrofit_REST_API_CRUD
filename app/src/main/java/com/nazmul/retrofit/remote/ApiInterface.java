@@ -15,7 +15,7 @@ import retrofit2.http.Query;
 public interface ApiInterface {
     @POST("retrofit/POST/readcontacts.php")
     Call<List<Contacts>> getContacts();
-
+///
     @FormUrlEncoded
     @POST("retrofit/POST/addcontact.php")
     public Call<Contacts> insertUser(
