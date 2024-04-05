@@ -57,10 +57,20 @@ public class SignupActivity extends AppCompatActivity {
                     etxtcell.setError("ivalid cell");
                     etxtcell.requestFocus();
                 }
-                else if (password.length()!=5){
+                else if (password.length()<6){
                     etxtpassword.setError("password shoud be > 5 character!");
                     etxtpassword.requestFocus();
                 }
+
+
+//                else if (password.length() < 4) {
+//
+//                    etxtPassword.setError("Password at least 4 character long !");
+//                    requestFocus(etxtPassword);
+//                else if (password.length()!=6){
+//                    etxtpassword.setError("Password < 6 character");
+//                    etxtpassword.requestFocus();
+//                }
                 else {
                     sign_up(name,cell,password);
                 }
